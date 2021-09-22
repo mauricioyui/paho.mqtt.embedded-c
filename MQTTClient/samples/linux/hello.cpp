@@ -30,6 +30,7 @@ public:
     fd = open(port, O_RDWR | O_NOCTTY);
     if(fd < 0)
       printf("Erro ao abrir porta\n");
+    init();
   }
 
   ~Serial()
